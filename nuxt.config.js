@@ -97,5 +97,20 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    extend (config) {
+      // 配置scss中使用cssModules
+      const scssRule = config.module.rules.find((item) => {
+        return String(item.test) === '/\\.scss$/i'
+      })
+      scssRule.oneOf = [] // 去掉老的
+      scssRule.use = [ // 替换成新的
+        'vue-style-loader',
+        {
+          loader: 'css-loader',
+          options: { modules: true }
+        },
+        'sass-loader'
+      ]
+    }
   }
 }

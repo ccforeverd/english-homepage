@@ -1,0 +1,10 @@
+
+// 首页配置文件
+
+{
+  data: {
+    bar: {
+      logo: '/images/logo-bar.png'
+    }
+  }
+}

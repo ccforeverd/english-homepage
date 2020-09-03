@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 import Vue, { VNode } from 'vue'
 
 declare global {
@@ -9,5 +10,15 @@ declare global {
     interface IntrinsicElements {
       [elem: string]: any;
     }
+  }
+
+  export interface ContentJson {
+    data: {}
+    dir: string
+    path: string
+    slug: string
+    extension: string
+    createdAt: string
+    updatedAt: string
   }
 }
