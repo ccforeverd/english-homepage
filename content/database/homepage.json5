@@ -4,7 +4,34 @@
 {
   data: {
     bar: {
-      logo: '/images/logo-bar.png'
+      logo: {
+        src: '/images/logo-bar.png',
+        width: 158
+      },
+      navs: {
+        list: [
+          { label: '首页', link: '/' },
+          { label: '课程体系', link: '/course' },
+          { label: '师资力量', link: '/teacher' },
+          { label: '教学成效', link: '/effect' },
+          { label: '校区分布', link: '/school' },
+        ]
+      },
+      tel: {
+        icon: '/icons/tel.png',
+        label: '400-610-1100',
+        number: '400-610-1100'
+      }
+    },
+    banner: {
+      // width: 1440,
+      width: 600, // 测试
+      height: 500,
+      images: [
+        { src: '/images/banner-1.jpg', left: '#333', right: '#400' },
+        { src: '/images/banner-2.jpg', left: '#aaa', right: '#b00' },
+        { src: '/images/banner-3.jpg', left: '#777', right: '#800' },
+      ]
     }
   }
 }

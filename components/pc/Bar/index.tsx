@@ -2,29 +2,43 @@
 import { Component, Vue } from 'vue-property-decorator'
 import style from './style.scss'
 
-console.log(style)
-
 @Component
 export default class Bar extends Vue {
-  // computed: {
-  //   database (): any {
-  //     return this.$store.state.database.homepage.bar ?? {}
-  //   }
-  // },
-
   protected render () {
-    const database = this.$store.state.database.homepage.bar ?? {}
+    const { path } = this.$route
+    const { logo, navs, tel } = this.$store.state.database.homepage.bar
 
     return (
-      <div class={style.wrap}>
-        <div class={style.main}>
-          <a href="/" class={style.left}>
-            <img src={database.logo} alt="logo-bar"/>
-          </a>
-          <div class={style.middle}>
-            123123
+      <div class={style.holder}>
+        <div class={style.wrap}>
+          <div class={style.main}>
+            <a href="/" class={style.left}>
+              <img src={logo.src} style={{
+                display: 'block',
+                width: logo.width + 'px'
+              }} alt="logo-bar"/>
+            </a>
+            <div class={style.middle}>
+              {
+                navs.list.map(item => (
+                  <div class={{
+                    [style.item]: true,
+                    [style.active]: item.link === path
+                  }}>
+                    <nuxt-link to={item.link}>
+                      {item.label}
+                    </nuxt-link>
+                  </div>
+                ))
+              }
+            </div>
+            <div class={style.right}>
+              <img src={tel.icon} alt="tel"/>
+              <a href={'tel:' + tel.number} class={style.tel}>
+                {tel.label}
+              </a>
+            </div>
           </div>
-          <a href="/" class={style.right}>电话</a>
         </div>
       </div>
     )
