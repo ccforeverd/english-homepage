@@ -26,8 +26,9 @@
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/axios": "^5.12.2",
     "nuxt": "^2.14.4",
-    "vue-class-component": "^7.2.5",
-    "vue-property-decorator": "^9.0.0"
+    "nuxt-property-decorator": "^2.7.2",
+    "swiper": "^6.2.0",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.4",

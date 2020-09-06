@@ -4528,6 +4528,13 @@ dom-serializer@0:
     domelementtype "^2.0.1"
     entities "^2.0.0"
 
+dom7@^3.0.0-alpha.7:
+  version "3.0.0-alpha.9"
+  resolved "https://registry.npm.taobao.org/dom7/download/dom7-3.0.0-alpha.9.tgz#0110c21181b8bad3a1ee72443e04d3c2e3f1d38f"
+  integrity sha1-ARDCEYG4utOh7nJEPgTTwuPx048=
+  dependencies:
+    ssr-window "^3.0.0-alpha.1"
+
 domain-browser@^1.1.1:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/domain-browser/download/domain-browser-1.2.0.tgz?cache=0&sync_timestamp=1597694651242&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomain-browser%2Fdownload%2Fdomain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
@@ -8458,6 +8465,17 @@ num2fraction@^1.2.2:
   resolved "https://registry.npm.taobao.org/num2fraction/download/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
+nuxt-property-decorator@^2.7.2:
+  version "2.7.2"
+  resolved "https://registry.npm.taobao.org/nuxt-property-decorator/download/nuxt-property-decorator-2.7.2.tgz#c465d9fe10db3c11911c94ca9b10dbcd068e0149"
+  integrity sha1-xGXZ/hDbPBGRHJTKmxDbzQaOAUk=
+  dependencies:
+    vue-class-component "7.2.3"
+    vue-property-decorator "^8.4.1"
+    vuex "^3.2.0"
+    vuex-class "^0.3.2"
+    vuex-module-decorators "^0.16.1"
+
 nuxt@^2.14.4:
   version "2.14.4"
   resolved "https://registry.npm.taobao.org/nuxt/download/nuxt-2.14.4.tgz#c12ee6060aa7660cdeed4ef9efdcefc4472077d9"
@@ -11010,6 +11028,11 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^3.0.0-alpha.1, ssr-window@^3.0.0-alpha.4:
+  version "3.0.0-alpha.4"
+  resolved "https://registry.npm.taobao.org/ssr-window/download/ssr-window-3.0.0-alpha.4.tgz#0c69a18c4305ecccdd8e11596155ca07b635f345"
+  integrity sha1-DGmhjEMF7MzdjhFZYVXKB7Y180U=
+
 ssri@^6.0.1:
   version "6.0.1"
   resolved "https://registry.npm.taobao.org/ssri/download/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
@@ -11450,6 +11473,14 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+swiper@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.npm.taobao.org/swiper/download/swiper-6.2.0.tgz?cache=0&sync_timestamp=1599228486983&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fswiper%2Fdownload%2Fswiper-6.2.0.tgz#f9dafdc2ccb5d6dd2bd728c78db87605329cb50e"
+  integrity sha1-+dr9wsy11t0r1yjHjbh2BTKctQ4=
+  dependencies:
+    dom7 "^3.0.0-alpha.7"
+    ssr-window "^3.0.0-alpha.4"
 
 symbol-tree@^3.2.4:
   version "3.2.4"
@@ -12253,7 +12284,17 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
-vue-class-component@^7.2.5:
+vue-awesome-swiper@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npm.taobao.org/vue-awesome-swiper/download/vue-awesome-swiper-4.1.1.tgz#8f7ab221ad003021d756b86aa618f429924900fe"
+  integrity sha1-j3qyIa0AMCHXVrhqphj0KZJJAP4=
+
+vue-class-component@7.2.3:
+  version "7.2.3"
+  resolved "https://registry.npm.taobao.org/vue-class-component/download/vue-class-component-7.2.3.tgz#a5b1abd53513a72ad51098752e2dedd499807cca"
+  integrity sha1-pbGr1TUTpyrVEJh1Li3t1JmAfMo=
+
+vue-class-component@^7.1.0:
   version "7.2.5"
   resolved "https://registry.npm.taobao.org/vue-class-component/download/vue-class-component-7.2.5.tgz#212b3548c4fdd3314774c4adbc1c3792a40b52d0"
   integrity sha1-ISs1SMT90zFHdMStvBw3kqQLUtA=
@@ -12320,10 +12361,12 @@ vue-no-ssr@^1.1.1:
   resolved "https://registry.npm.taobao.org/vue-no-ssr/download/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha1-h1875vsK5BVoqDfzrBqA6qE3uZg=
 
-vue-property-decorator@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npm.taobao.org/vue-property-decorator/download/vue-property-decorator-9.0.0.tgz#0a5f6d47d33ca62a8876108ccfa65c2c4fb7325a"
-  integrity sha1-Cl9tR9M8piqIdhCMz6ZcLE+3Mlo=
+vue-property-decorator@^8.4.1:
+  version "8.5.1"
+  resolved "https://registry.npm.taobao.org/vue-property-decorator/download/vue-property-decorator-8.5.1.tgz#571a91cf8d2b507f537d79bf8275af3184572fff"
+  integrity sha1-VxqRz40rUH9TfXm/gnWvMYRXL/8=
+  dependencies:
+    vue-class-component "^7.1.0"
 
 vue-router@^3.4.3:
   version "3.4.3"
@@ -12383,7 +12426,17 @@ vuetify@^2:
   resolved "https://registry.npm.taobao.org/vuetify/download/vuetify-2.3.10.tgz#c8cbc77ee1224b5a132f501a3762dee6d8c95a06"
   integrity sha1-yMvHfuEiS1oTL1AaN2Le5tjJWgY=
 
-vuex@^3.5.1:
+vuex-class@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.npm.taobao.org/vuex-class/download/vuex-class-0.3.2.tgz#c7e96a076c1682137d4d23a8dcfdc63f220e17a8"
+  integrity sha1-x+lqB2wWghN9TSOo3P3GPyIOF6g=
+
+vuex-module-decorators@^0.16.1:
+  version "0.16.1"
+  resolved "https://registry.npm.taobao.org/vuex-module-decorators/download/vuex-module-decorators-0.16.1.tgz#9e651d507057b07a1b52f0f65dfae97b9095f00f"
+  integrity sha1-nmUdUHBXsHobUvD2Xfrpe5CV8A8=
+
+vuex@^3.2.0, vuex@^3.5.1:
   version "3.5.1"
   resolved "https://registry.npm.taobao.org/vuex/download/vuex-3.5.1.tgz#f1b8dcea649bc25254cf4f4358081dbf5da18b3d"
   integrity sha1-8bjc6mSbwlJUz09DWAgdv12hiz0=

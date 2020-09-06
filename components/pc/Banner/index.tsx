@@ -1,19 +1,26 @@
 
-import { Vue, Component } from 'vue-property-decorator'
+import { Vue, Component } from 'nuxt-property-decorator'
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 
 import style from './style.scss'
+import 'swiper/swiper-bundle.css'
 
-@Component
+@Component({
+  components: {
+    Swiper,
+    SwiperSlide
+  }
+})
 export default class Banner extends Vue {
   protected render () {
     const { width, height, images } = this.$store.state.database.homepage.banner
 
     return (
-      <div class={style.wrap}>
-        <div class={style.main}>
+      <div class={style.wrap} key='banner'>
+        <swiper class={style.main} aaa='123'>
           {
             images.map(item => (
-              <div class={style.item} style={{ height: height + 'px' }}>
+              <swiper-slide class={style.item} style={{ height: height + 'px' }}>
                 <div class={style.left} style={{ background: item.left }} />
                 <img style={{
                   display: 'block',
@@ -22,10 +29,10 @@ export default class Banner extends Vue {
                   width: '100%'
                 }} src={item.src} alt='banner' />
                 <div class={style.right} style={{ background: item.right }} />
-              </div>
+              </swiper-slide>
             ))
           }
-        </div>
+        </swiper>
       </div>
     )
   }
