@@ -6,7 +6,7 @@ import style from './style.scss'
 export default class Bar extends Vue {
   protected render () {
     const { path } = this.$route
-    const { logo, navs, tel } = this.$store.state.database.homepage.bar
+    const { logo = {}, navs = {}, tel = {} } = this.$store.state.database.bar
 
     return (
       <div class={style.holder}>
@@ -20,7 +20,7 @@ export default class Bar extends Vue {
             </a>
             <div class={style.middle}>
               {
-                navs.list.map(item => (
+                (navs.list || []).map(item => (
                   <div class={{
                     [style.item]: true,
                     [style.active]: item.link === path

@@ -22,34 +22,35 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.8.1",
+    "@nuxt/content": "^1.9.0",
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/axios": "^5.12.2",
-    "nuxt": "^2.14.4",
-    "nuxt-property-decorator": "^2.7.2",
+    "nuxt": "^2.14.6",
+    "nuxt-property-decorator": "^2.8.8",
+    "nuxt-typed-vuex": "^0.1.21",
     "swiper": "^6.2.0",
     "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.4",
+    "@nuxt/types": "^2.14.6",
     "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-config-typescript": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
-    "@vue/test-utils": "^1.0.5",
+    "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "eslint-plugin-nuxt": "^1.0.0",
-    "husky": "^4.2.5",
+    "husky": "^4.3.0",
     "jest": "^26.4.2",
-    "lint-staged": "^10.3.0",
-    "stylelint": "^13.7.0",
+    "lint-staged": "^10.4.0",
+    "stylelint": "^13.7.1",
     "stylelint-config-standard": "^20.0.0",
-    "ts-jest": "^26.3.0",
-    "vue-jest": "^3.0.6"
+    "ts-jest": "^26.4.0",
+    "vue-jest": "^3.0.7"
   }
 }

@@ -20,14 +20,4 @@ declare global {
       // }
     }
   }
-
-  export interface ContentJson {
-    data: {}
-    dir: string
-    path: string
-    slug: string
-    extension: string
-    createdAt: string
-    updatedAt: string
-  }
 }
