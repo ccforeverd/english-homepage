@@ -4,8 +4,8 @@
 {
   data: {
     banner: {
-      // width: 1440,
-      width: 600, // 测试
+      width: 1440,
+      // width: 600, // 测试
       height: 500,
       images: [
         { src: '/images/banner-1.jpg', left: '#333', right: '#400' },

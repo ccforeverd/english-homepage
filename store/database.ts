@@ -6,15 +6,15 @@ import { contentFunc } from '@nuxt/content/types/content'
 import { ContentData } from '~/types'
 
 export const state = () => ({
-  bar: {},
+  global: {},
   homepage: {}
 })
 
 export type RootState = ReturnType<typeof state>
 
 export const mutations: MutationTree<RootState> = {
-  'bar:set' (state, data) {
-    state.bar = data
+  'global:set' (state, data) {
+    state.global = data
   },
   'homepage:set' (state, data) {
     state.homepage = data
@@ -22,14 +22,14 @@ export const mutations: MutationTree<RootState> = {
 }
 
 export const actions: ActionTree<RootState, RootState> = {
-  async 'bar:get' ({ commit }) {
-    const $content = this.$content as unknown as contentFunc
-    const barData = await $content('database/bar').fetch() as ContentData
-    commit('bar:set', barData.data)
+  async 'global:get' ({ commit }) {
+    const $content: contentFunc = this.$content as unknown as contentFunc
+    const globalData: ContentData = await $content('database/global').fetch() as ContentData
+    commit('global:set', globalData.data)
   },
   async 'homepage:get' ({ commit }) {
-    const $content = this.$content as unknown as contentFunc
-    const homepageData = await $content('database/homepage').fetch() as ContentData
+    const $content: contentFunc = this.$content as unknown as contentFunc
+    const homepageData: ContentData = await $content('database/homepage').fetch() as ContentData
     commit('homepage:set', homepageData.data)
   }
 }

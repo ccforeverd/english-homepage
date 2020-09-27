@@ -1,0 +1,58 @@
+{
+  data: {
+    info: {
+      tel: '400-610-1100',
+      title: '北京领语堂教育科技发展有限公司',
+      address: '北京市东城区白桥大街15号 嘉禾国信大厦1层101'
+    },
+    bar: {
+      logo: {
+        src: '/images/logo-bar.png',
+        width: 158
+      },
+      navs: {
+        list: [
+          { label: '首页', link: '/' },
+          { label: '课程体系', link: '/course' },
+          { label: '师资力量', link: '/teacher' },
+          { label: '教学成效', link: '/effect' },
+          { label: '校区分布', link: '/school' }
+        ]
+      },
+      tel: {
+        icon: '/icons/tel.png'
+      }
+    },
+    footer: {
+      logo: {
+        src: '/images/logo-footer.png',
+        width: 74
+      },
+      navs: {
+        list: [
+          { label: '关于我们', link: '#' },
+          { label: '企业动态', link: '#' },
+          { label: '授权合作', link: '#' },
+          { label: '加入我们', link: '#' },
+          { label: '联系我们', link: '#' },
+          { label: '网站地图', link: '#' },
+          { label: '隐私政策', link: '#' }
+        ]
+      },
+      friend: {
+        list: [
+          { label: '友情连接', link: '/' },
+          { label: 'CFA', link: 'http://www.cfa.cn/' },
+          { label: '在职研究生', link: 'http://www.duyan.com.cn/' },
+          { label: 'NYC早教', link: 'http://www.nyckidsclub.com/' }
+        ]
+      },
+      qrcode: {
+        list: [
+          { label: 'lisa英语订阅号', img: '/qrcode/wx-subscribe.png' },
+          { label: 'lisa英语服务号', img: '/qrcode/wx-service.png' }
+        ]
+      }
+    }
+  }
+}

@@ -1,16 +1,22 @@
 
 import { Vue, Component } from 'nuxt-property-decorator'
 import Banner from '~/components/pc/Banner'
+import { BlockStyle1 } from '~/components/pc/HomepageBlock'
 
-import './style.scss'
+import '~/assets/style/reset.scss'
 
 @Component
 export default class PageIndex extends Vue {
-  async asyncData({ store: { dispatch } }) {
+  showContent = false
+
+  async asyncData ({ store: { dispatch } }) {
     await Promise.all([
-      dispatch('database/bar:get'),
+      dispatch('database/global:get'),
       dispatch('database/homepage:get')
     ])
+    return {
+      showContent: true
+    }
   }
 
   layout (context) {
@@ -22,9 +28,10 @@ export default class PageIndex extends Vue {
   }
 
   render() {
-    return (
+    return this.showContent && (
       <main>
         <Banner />
+        <BlockStyle1 />
       </main>
     )
   }

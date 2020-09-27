@@ -1,0 +1,95 @@
+@import "@/assets/style/main.scss";
+
+.wrapper {
+  padding-bottom: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(144,138,147,1);
+  background-color: #372F3C;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 20px;
+  width: $content-width;
+  margin: 0 auto;
+
+  dt {
+    font-size: 14px;
+    color: #FFC96E;
+    padding: 20px 0;
+  }
+}
+
+.left {
+  color: #FFF;
+  font-weight: bold;
+
+  p {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 9px;
+      height: 10px;
+      margin-right: 7px;
+      background-image: url('/icons/tel-small.png');
+      background-size: 100% 100%;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  a {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.middle {
+  width: 320px;
+  
+  dl {
+    overflow: hidden;
+  }
+
+  dd {
+    float: left;
+    width: 33%;
+    margin-bottom: 10px;
+  }
+}
+
+.right {
+  color: #FFF;
+
+  dl {
+    width: 200px;
+    display: table;
+  }
+
+  dd {
+    float: left;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.links {
+  margin-bottom: 10px;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 0 30px;
+  }
+}
+
+.bottom {
+  text-align: center;
+}

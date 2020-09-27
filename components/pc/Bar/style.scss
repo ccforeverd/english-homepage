@@ -1,8 +1,8 @@
-
-$bar-height: 96px;
+@import '~/assets/style/main.scss';
 
 .wrap {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -18,7 +18,7 @@ $bar-height: 96px;
 
 .main {
   display: flex;
-  width: 1000px;
+  width: $content-width;
   height: 100%;
   margin: 0 auto;
   align-items: center;
