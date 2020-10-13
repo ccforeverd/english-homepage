@@ -7,9 +7,9 @@ import '~/assets/style/reset.scss'
 
 @Component
 export default class PageIndex extends Vue {
-  showContent = false
+  protected showContent = false
 
-  async asyncData ({ store: { dispatch } }) {
+  protected async asyncData ({ store: { dispatch } }) {
     await Promise.all([
       dispatch('database/global:get'),
       dispatch('database/homepage:get')
@@ -19,7 +19,7 @@ export default class PageIndex extends Vue {
     }
   }
 
-  layout (context) {
+  protected layout (context) {
     // TODO 检测移动端时使用 h5
     // const ua: string = context.req.headers['user-agent']
     // const isMobile: boolean = !!ua.toLowerCase().match(/(iphone|ipod|ipad|android)/)
@@ -27,7 +27,7 @@ export default class PageIndex extends Vue {
     return 'pc'
   }
 
-  render() {
+  protected render() {
     return this.showContent && (
       <main>
         <Banner />
